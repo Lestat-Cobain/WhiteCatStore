@@ -1,0 +1,27 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ],
+            "url": "http://localhost:4200",  // URL where Angular app runs
+            "webRoot": "${workspaceFolder}", // Workspace folder
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+            "webpack:///src/*": "${webRoot}/src/*",
+            "webpack:///./src/*": "${webRoot}/src/*",
+            "webpack:///*": "*"
+            }
+        }
+    ]
+}

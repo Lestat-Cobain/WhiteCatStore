@@ -1,0 +1,43 @@
+<div class="product-list-container">
+  <h2>Product List</h2>
+
+  <a mat-button [routerLink]="['/product/register']">Register new product in store</a>
+  <a mat-button [routerLink]="['/product/add']">Add products to inventory</a>
+
+  <!-- Scrollable container for table -->
+  <div class="table-container">
+    <mat-table [dataSource]="products" class="mat-elevation-z8">
+      <!-- Product productId Column -->
+      <ng-container matColumnDef="productId">
+        <mat-header-cell *matHeaderCellDef> productId </mat-header-cell>
+        <mat-cell *matCellDef="let product"> {{ product.productId }} </mat-cell>
+      </ng-container>
+
+      <!-- Product Name Column -->
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+        <mat-cell *matCellDef="let product"> {{ product.name }} </mat-cell>
+      </ng-container>
+
+      <!-- Product Price Column -->
+      <ng-container matColumnDef="price">
+        <mat-header-cell *matHeaderCellDef> Price </mat-header-cell>
+        <mat-cell *matCellDef="let product"> {{ product.price | currency }} </mat-cell>
+      </ng-container>
+
+      <!-- Action Buttons Column -->
+      <ng-container matColumnDef="actions">
+        <mat-header-cell *matHeaderCellDef> Actions </mat-header-cell>
+        <mat-cell class="buttons-col"  *matCellDef="let product">
+          <button mat-raised-button color="primary" (click)="openProductDetails(product.productId)">View Details</button>
+          <button mat-raised-button color="primary" (click)="editProduct(product.productId)">Edit</button>
+          <button mat-raised-button color="warn" (click)="deleteProduct(product.productId)">Delete</button>
+        </mat-cell>
+      </ng-container>
+
+      <!-- Header and Rows -->
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </div>
+</div>

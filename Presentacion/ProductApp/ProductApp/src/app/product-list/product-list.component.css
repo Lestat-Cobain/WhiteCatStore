@@ -1,0 +1,87 @@
+/* Base container styles */
+.product-list-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Scrollable table container */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 400px; /* Adjust height for better usability */
+}
+
+/* Ensure table responsiveness */
+.mat-table {
+  width: 100%;
+  table-layout: auto; /* Allows flexible column sizing */
+}
+
+/* Responsive buttons in action column */
+.buttons-col {
+  display: flex;
+  
+  flex-wrap: wrap;
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+/* Styles for tablets and smaller screens */
+@media screen and (max-width: 768px) {
+  .product-list-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .table-container {
+    max-height: 300px; /* Adjust for smaller screens */
+  }
+
+  /* Reduce button size for small screens */
+  button.mat-raised-button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .buttons-col {
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
+/* Adjustments for mobile devices */
+@media screen and (max-width: 480px) {
+  .product-list-container {
+    padding: 5px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  /* Ensure table scrolling is smooth */
+  .table-container {
+    overflow-x: auto;
+    max-height: 250px;
+  }
+
+  /* Stack buttons vertically */
+  .buttons-col {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .buttons-col button {
+    width: 100%; /* Make buttons full width */
+  }
+}

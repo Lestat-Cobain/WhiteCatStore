@@ -1,0 +1,50 @@
+.custom-button {
+    min-width: 150px !important;
+    height: 50px !important;
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+  }
+
+  .center-actions {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically (if necessary) */
+    /*height: 100%;            /* Ensure it takes full height of the parent if needed */
+  }
+
+  mat-dialog-container {
+    display: flex;
+    flex-direction: column; /* Stack content and actions vertically */
+    align-items: center;    /* Center align the content */
+    justify-content: center; /* Center the modal vertically in the viewport */
+    height: auto;           /* Let height adjust based on content */
+    max-height: 80vh;       /* Limit the max height to prevent overflow */
+    max-width: 80vw;        /* Optional: Limit the max width of the modal */
+    overflow: hidden;       /* Prevent overflow and enable scrolling if needed */
+  }
+  
+  
+  .dialog-content p {
+    font-size: 16px;
+    margin: 0;
+    width: 100%; /* Take full width */
+    height: auto;
+    padding-bottom: 4%;
+    /*text-align: center; /* Optional: Center text */
+  }
+
+  .image-preview-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dialog-content img {
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto;    /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  

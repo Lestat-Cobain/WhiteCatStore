@@ -1,0 +1,26 @@
+<div class="product-form-container">
+    <h2>Log in</h2>
+  
+    <form (ngSubmit)="onSubmit()" class="form-container" #productForm="ngForm">
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="login.email" name="email" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput [(ngModel)]="login.password" name="password" required />
+      </mat-form-field>
+  
+      <div class="button-container">
+        <button mat-raised-button color="primary" type="submit">
+          Sign in
+        </button>
+  
+        <!-- <button mat-raised-button color="primary" class="right-button" (click)="goBack()">
+          Go Back
+        </button> -->
+      </div>
+  
+    </form>
+  </div>

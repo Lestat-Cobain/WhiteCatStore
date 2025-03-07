@@ -1,0 +1,65 @@
+<div class="product-form-container">
+  <h2>{{ isEditMode ? 'Edit Product' : 'Register Product' }}</h2>
+
+  <form (ngSubmit)="onSubmit()" class="form-container" #productForm="ngForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Product Name</mat-label>
+      <input matInput [(ngModel)]="product.name" name="name" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Product Price</mat-label>
+      <input matInput type="number" [(ngModel)]="product.price" name="price" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Provider</mat-label>
+      <input matInput [(ngModel)]="product.details.provider" name="provider" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Product details</mat-label>
+      <input matInput [(ngModel)]="product.details.productDetails" name="productDetails" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Guarantee time</mat-label>
+      <input matInput [(ngModel)]="product.details.guaranteeTime" name="guaranteeTime" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Stock</mat-label>
+      <input matInput type="number" [(ngModel)]="product.details.inStock" name="inStock" required />
+    </mat-form-field>
+
+    <div class="image-upload-container">
+      <h3>Upload Product Image</h3>
+    
+      <!-- Hidden file input -->
+      <input type="file" (change)="onFileSelected($event)" accept="image/*" #fileInput hidden>
+    
+      <!-- Button to trigger file input without submitting the form -->
+      <button mat-raised-button color="primary" (click)="$event.preventDefault(); fileInput.click()">
+        Choose Image
+      </button>
+    
+      <!-- Image Preview -->
+      <div *ngIf="product.imageUrl" class="image-preview-container">
+        <img [src]="product.imageUrl" class="image-preview" alt="Product Image">       
+      </div>
+
+      <!-- Remove Image Button -->
+      <button mat-raised-button color="warn" (click)="clearImage()">Remove Image</button>
+    </div>
+    
+    <div class="button-container">
+      <button mat-raised-button color="primary" type="submit">
+        {{ isEditMode ? 'Update' : 'Add' }} Product
+      </button>
+
+      <button mat-raised-button color="primary" class="right-button" (click)="goBack()">
+        Go Back
+      </button>
+    </div>
+  </form>
+</div>
