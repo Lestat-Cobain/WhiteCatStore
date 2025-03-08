@@ -6,7 +6,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.sln'
+  solution: './ProductsMangementAPI/ProductsMangementAPI.csproj'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
