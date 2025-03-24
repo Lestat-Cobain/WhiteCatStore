@@ -4,8 +4,6 @@ trigger:
 
 pool:
   name: 'default'
-  demands:
-    - agent.name -equals vstsagent.white-cat-store.QA.DESKTOP-NFQ4U1A
     
 variables:
   buildConfiguration: 'Release'
