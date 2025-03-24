@@ -1,0 +1,111 @@
+trigger:
+- PROD
+- QA # This allows QA deployments
+
+pool:
+  name: 'default'
+    
+variables:
+  buildConfiguration: 'Release'
+  deployPathQA: 'C:\inetpub\wwwroot\WhiteCatStoreAPI-QA' # QA IIS path
+  deployPathProd: 'C:\inetpub\wwwroot\WhiteCatStoreAPI'  # Production IIS path
+
+stages:
+- stage: Build
+  displayName: "Build Application"
+  jobs:
+  - job: Build
+    steps:
+    - task: DotNetCoreCLI@2
+      displayName: 'Restore'
+      inputs:
+        command: 'restore'
+        projects: '**/*.csproj'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Publish'
+      inputs:
+        command: 'publish'
+        publishWebProjects: true
+        arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)\publish'
+        zipAfterPublish: false
+
+    - task: ArchiveFiles@2
+      displayName: 'Create Deployment ZIP'
+      inputs:
+        rootFolderOrFile: '$(Build.ArtifactStagingDirectory)\publish'
+        includeRootFolder: false
+        archiveFile: '$(Build.ArtifactStagingDirectory)\WebApp.zip'
+        replaceExistingArchive: true
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'Save Artifacts'
+      inputs:
+        pathToPublish: '$(Build.ArtifactStagingDirectory)'
+        artifactName: 'drop'
+
+- stage: DeployQA
+  displayName: "Deploy to QA"
+  dependsOn: Build
+  condition: and(succeeded(), eq(variables['Build.SourceBranchName'], 'QA')) # Only deploy if QA branch
+  jobs:
+  - deployment: DeployQA
+    displayName: "Deploy to IIS (QA)"
+    environment: "QA"
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: PowerShell@2
+            displayName: 'Deploy to IIS'
+            inputs:
+              targetType: 'inline'
+              script: |
+                Write-Host "Stopping IIS Site..."
+                Stop-WebSite -Name "WhiteCatStoreAPI-QA"
+
+                Write-Host "Preparing deploy folder..."
+                if (Test-Path "$(deployPathQA)") {
+                    Remove-Item -Path "$(deployPathQA)\*" -Recurse -Force
+                } else {
+                    New-Item -Path "$(deployPathQA)" -ItemType Directory -Force
+                }
+
+                Write-Host "Extracting WebApp.zip to deploy folder..."
+                Expand-Archive -Path "$(Pipeline.Workspace)/drop/WebApp.zip" -DestinationPath "$(deployPathQA)" -Force
+
+                Write-Host "Starting IIS Site..."
+                Start-WebSite -Name "WhiteCatStoreAPI-QA"
+
+- stage: DeployProd
+  displayName: "Deploy to Production"
+  dependsOn: Build
+  condition: and(succeeded(), eq(variables['Build.SourceBranchName'], 'PROD')) # Only deploy if PROD branch
+  jobs:
+  - deployment: DeployProd
+    displayName: "Deploy to IIS (Production)"
+    environment: "Production" # Requires manual approval
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: PowerShell@2
+            displayName: 'Deploy to IIS'
+            inputs:
+              targetType: 'inline'
+              script: |
+                Write-Host "Stopping IIS Site..."
+                Stop-WebSite -Name "WhiteCatStoreAPI"
+
+                Write-Host "Preparing deploy folder..."
+                if (Test-Path "$(deployPathProd)") {
+                    Remove-Item -Path "$(deployPathProd)\*" -Recurse -Force
+                } else {
+                    New-Item -Path "$(deployPathProd)" -ItemType Directory -Force
+                }
+
+                Write-Host "Extracting WebApp.zip to deploy folder..."
+                Expand-Archive -Path "$(Pipeline.Workspace)/drop/WebApp.zip" -DestinationPath "$(deployPathProd)" -Force
+
+                Write-Host "Starting IIS Site..."
+                Start-WebSite -Name "WhiteCatStoreAPI"
