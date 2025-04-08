@@ -44,7 +44,7 @@ stages:
         pathToPublish: '$(Build.ArtifactStagingDirectory)'
         artifactName: 'drop'
 
-- stage: DeployQA
+- - stage: DeployQA
   displayName: "Deploy to QA"
   dependsOn: Build
   condition: and(succeeded(), eq(variables['Build.SourceBranchName'], 'QA')) # Only deploy if QA branch
@@ -57,7 +57,7 @@ stages:
         deploy:
           steps:
           - task: PowerShell@2
-            displayName: 'Deploy to IIS'
+            displayName: 'Deploy to IIS (QA)'
             inputs:
               targetType: 'inline'
               script: |
@@ -66,7 +66,14 @@ stages:
 
                 Write-Host "Preparing deploy folder..."
                 if (Test-Path "$(deployPathQA)") {
-                    Remove-Item -Path "$(deployPathQA)\*" -Recurse -Force
+                    Write-Host "Taking ownership of $(deployPathQA)..."
+                    takeown /f "$(deployPathQA)" /r /d Y
+                    
+                    Write-Host "Granting current user full control on $(deployPathQA)..."
+                    icacls "$(deployPathQA)" /grant "${env:USERNAME}:(OI)(CI)F" /T
+                    
+                    Write-Host "Deleting previous files..."
+                    Remove-Item -Path "$(deployPathQA)\*" -Recurse -Force -ErrorAction SilentlyContinue
                 } else {
                     New-Item -Path "$(deployPathQA)" -ItemType Directory -Force
                 }
@@ -90,7 +97,7 @@ stages:
         deploy:
           steps:
           - task: PowerShell@2
-            displayName: 'Deploy to IIS'
+            displayName: 'Deploy to IIS (Production)'
             inputs:
               targetType: 'inline'
               script: |
@@ -99,7 +106,14 @@ stages:
 
                 Write-Host "Preparing deploy folder..."
                 if (Test-Path "$(deployPathProd)") {
-                    Remove-Item -Path "$(deployPathProd)\*" -Recurse -Force
+                    Write-Host "Taking ownership of $(deployPathProd)..."
+                    takeown /f "$(deployPathProd)" /r /d Y
+                    
+                    Write-Host "Granting current user full control on $(deployPathProd)..."
+                    icacls "$(deployPathProd)" /grant "${env:USERNAME}:(OI)(CI)F" /T
+
+                    Write-Host "Deleting previous files..."
+                    Remove-Item -Path "$(deployPathProd)\*" -Recurse -Force -ErrorAction SilentlyContinue
                 } else {
                     New-Item -Path "$(deployPathProd)" -ItemType Directory -Force
                 }
