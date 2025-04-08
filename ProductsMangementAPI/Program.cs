@@ -73,6 +73,7 @@ var productApi = app.MapGroup("/products")
 app.MapPost("/login", async (LoginModel login, ISpProductRepository SpProductRepository, ILoginRepository LoginRepository) =>
 {
     var response = await SpProductRepository.LoginAsync(login);
+    Console.WriteLine($"LoginAsync response: {response} for user {login.Email}");
     // Validate user credentials (you could check from a database or use a mock)
     if (response == 1)
     {
@@ -81,8 +82,6 @@ app.MapPost("/login", async (LoginModel login, ISpProductRepository SpProductRep
     }
 
     return Results.Unauthorized();
-
-    
 });
 
 
