@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Serilog;
+using Azure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -73,7 +74,7 @@ var productApi = app.MapGroup("/products")
 app.MapPost("/login", async (LoginModel login, ISpProductRepository SpProductRepository, ILoginRepository LoginRepository) =>
 {
     var response = await SpProductRepository.LoginAsync(login);
-    Console.WriteLine($"LoginAsync response: {response} for user {login.Email}");
+    Log.Information("LoginAsync response: {Response} for user {Email}", response, login.Email);
     // Validate user credentials (you could check from a database or use a mock)
     if (response == 1)
     {
@@ -86,7 +87,7 @@ app.MapPost("/login", async (LoginModel login, ISpProductRepository SpProductRep
 
 
 app.MapGet("/products", async (ISpProductRepository SpProductRepository) =>
-{
+{  
     var products = await SpProductRepository.GetProductListAsync();
     return Results.Ok(products);
 });
