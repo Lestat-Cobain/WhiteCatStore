@@ -44,7 +44,7 @@ stages:
         pathToPublish: '$(Build.ArtifactStagingDirectory)'
         artifactName: 'drop'
 
-- - stage: DeployQA
+- stage: DeployQA
   displayName: "Deploy to QA"
   dependsOn: Build
   condition: and(succeeded(), eq(variables['Build.SourceBranchName'], 'QA')) # Only deploy if QA branch
