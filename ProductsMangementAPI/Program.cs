@@ -6,8 +6,15 @@ using ProductsMangementAPI.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog(); // Add this before builder.Build();
 
 builder.Services.AddAuthentication(options =>
 {
@@ -113,7 +120,11 @@ app.MapDelete("/products/{productid:int}", async (int productid, ISpProductRepos
 // Configure the HTTP request pipeline.
 
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+    c.RoutePrefix = ""; // this makes Swagger available at http://host:port/
+});
 
 
 //app.UseHttpsRedirection();
