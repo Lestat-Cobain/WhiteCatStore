@@ -17,8 +17,8 @@ namespace ProductsMangementAPI.Repository
                 new System.Security.Claims.Claim("sub", username)
             }),
                 Expires = DateTime.UtcNow.AddHours(1),
-                Issuer = "yourdomain.com",
-                Audience = "yourdomain.com",
+                Issuer = "http://localhost:3090",
+                Audience = "http://localhost:3090",
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
