@@ -1,6 +1,8 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using Azure;
+using Microsoft.Data.SqlClient;
 using ProductsMangementAPI.Models;
 using ProductsMangementAPI.Models.DTOs;
+using Serilog;
 using System.Data;
 
 namespace ProductsMangementAPI.Repository
@@ -46,6 +48,7 @@ namespace ProductsMangementAPI.Repository
             }
             catch (Exception ex)
             {
+                Log.Information("LoginAsync exception: {exception}", ex.Message);
                 return 0;
             }
         }
@@ -125,7 +128,7 @@ namespace ProductsMangementAPI.Repository
             }
             catch (Exception ex)
             {
-
+                Log.Information("GetProductListAsync exception: {exception}", ex.Message);
                 throw;
             }
         }

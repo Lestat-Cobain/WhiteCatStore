@@ -6,8 +6,16 @@ using ProductsMangementAPI.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Serilog;
+using Azure;
 
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog(); // Add this before builder.Build();
 
 builder.Services.AddAuthentication(options =>
 {
@@ -22,9 +30,9 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = "yourdomain.com", // Change to your issuer
-        ValidAudience = "yourdomain.com", // Change to your audience
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("your_secret_key")) // Secret Key
+        ValidIssuer = "http://localhost:3090", // Change to your issuer
+        ValidAudience = "http://localhost:3090", // Change to your audience
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("your_super_long_secret_key_that_is_32_chars")) // Secret Key
     };
 });
 
@@ -66,6 +74,7 @@ var productApi = app.MapGroup("/products")
 app.MapPost("/login", async (LoginModel login, ISpProductRepository SpProductRepository, ILoginRepository LoginRepository) =>
 {
     var response = await SpProductRepository.LoginAsync(login);
+    Log.Information("LoginAsync response: {Response} for user {Email}", response, login.Email);
     // Validate user credentials (you could check from a database or use a mock)
     if (response == 1)
     {
@@ -74,13 +83,11 @@ app.MapPost("/login", async (LoginModel login, ISpProductRepository SpProductRep
     }
 
     return Results.Unauthorized();
-
-    
 });
 
 
 app.MapGet("/products", async (ISpProductRepository SpProductRepository) =>
-{
+{  
     var products = await SpProductRepository.GetProductListAsync();
     return Results.Ok(products);
 });
@@ -111,12 +118,15 @@ app.MapDelete("/products/{productid:int}", async (int productid, ISpProductRepos
 
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
-app.UseHttpsRedirection();
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+    c.RoutePrefix = ""; // this makes Swagger available at http://host:port/
+});
+
+
+//app.UseHttpsRedirection();
 
 app.Run();
