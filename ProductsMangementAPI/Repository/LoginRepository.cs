@@ -5,6 +5,12 @@ namespace ProductsMangementAPI.Repository
 {
     public class LoginRepository : ILoginRepository
     {
+        private IConfiguration Configuration { get; set; }
+        public LoginRepository(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
         public async Task<string> GenerateJwtToken(string username)
         {
             var tokenHandler = new System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler();
@@ -17,8 +23,8 @@ namespace ProductsMangementAPI.Repository
                 new System.Security.Claims.Claim("sub", username)
             }),
                 Expires = DateTime.UtcNow.AddHours(1),
-                Issuer = "http://localhost:3090",
-                Audience = "http://localhost:3090",
+                Issuer = Configuration.GetSection("JwtParams:Url").Value,
+                Audience = Configuration.GetSection("JwtParams:Url").Value,
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 

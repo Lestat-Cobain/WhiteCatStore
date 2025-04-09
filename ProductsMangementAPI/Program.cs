@@ -15,7 +15,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
-builder.Host.UseSerilog(); // Add this before builder.Build();
+builder.Host.UseSerilog(); 
 
 builder.Services.AddAuthentication(options =>
 {
@@ -30,8 +30,8 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = "http://localhost:3090", // Change to your issuer
-        ValidAudience = "http://localhost:3090", // Change to your audience
+        ValidIssuer = builder.Configuration["JwtParams:Url"], // Change to your issuer
+        ValidAudience = builder.Configuration["JwtParams:Url"], // Change to your audience
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("your_super_long_secret_key_that_is_32_chars")) // Secret Key
     };
 });
