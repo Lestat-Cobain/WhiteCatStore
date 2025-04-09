@@ -1,0 +1,57 @@
+2025-04-09 00:34:21.889 -06:00 [INF] User profile is available. Using 'C:\Users\Alex\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-09 00:34:22.239 -06:00 [INF] Now listening on: https://localhost:7080
+2025-04-09 00:34:22.239 -06:00 [INF] Now listening on: http://localhost:5065
+2025-04-09 00:34:22.241 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-09 00:34:22.241 -06:00 [INF] Hosting environment: Development
+2025-04-09 00:34:22.241 -06:00 [INF] Content root path: C:\Users\Alex\source\repos\ProductsMangementAPI\ProductsMangementAPI
+2025-04-09 00:34:23.710 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger/index.html - null null
+2025-04-09 00:34:23.892 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger/index.html - 404 0 null 187.3916ms
+2025-04-09 00:34:23.894 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7080/swagger/index.html, Response status code: 404
+2025-04-09 01:00:11.223 -06:00 [INF] User profile is available. Using 'C:\Users\Alex\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-09 01:00:11.532 -06:00 [INF] Now listening on: https://localhost:7080
+2025-04-09 01:00:11.532 -06:00 [INF] Now listening on: http://localhost:5065
+2025-04-09 01:00:11.534 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-09 01:00:11.534 -06:00 [INF] Hosting environment: Development
+2025-04-09 01:00:11.534 -06:00 [INF] Content root path: C:\Users\Alex\source\repos\ProductsMangementAPI\ProductsMangementAPI
+2025-04-09 01:00:13.054 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger/index.html - null null
+2025-04-09 01:00:13.201 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger/index.html - 404 0 null 152.9426ms
+2025-04-09 01:00:13.203 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7080/swagger/index.html, Response status code: 404
+2025-04-09 01:00:30.257 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger/ - null null
+2025-04-09 01:00:30.263 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger/ - 404 0 null 6.085ms
+2025-04-09 01:00:30.263 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7080/swagger/, Response status code: 404
+2025-04-09 01:00:33.889 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger/index.html - null null
+2025-04-09 01:00:33.897 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger/index.html - 404 0 null 7.7272ms
+2025-04-09 01:00:33.897 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7080/swagger/index.html, Response status code: 404
+2025-04-09 01:00:40.194 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/index.html - null null
+2025-04-09 01:00:40.261 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/index.html - 200 null text/html;charset=utf-8 66.4918ms
+2025-04-09 01:00:40.282 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-09 01:00:40.286 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 4.218ms
+2025-04-09 01:00:40.331 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/_vs/browserLink - null null
+2025-04-09 01:00:40.356 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.3197ms
+2025-04-09 01:00:40.474 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger/v1/swagger.json - null null
+2025-04-09 01:00:40.480 -06:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-09 01:00:40.583 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.0513ms
+2025-04-09 01:00:56.077 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7080/login - application/json 59
+2025-04-09 01:00:56.118 -06:00 [INF] CORS policy execution successful.
+2025-04-09 01:00:56.119 -06:00 [INF] Executing endpoint 'HTTP: POST /login'
+2025-04-09 01:00:56.447 -06:00 [INF] LoginAsync response: 1 for user alestat1@hotmail.com
+2025-04-09 01:01:52.783 -06:00 [INF] Setting HTTP status code 200.
+2025-04-09 01:01:52.789 -06:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-04-09 01:01:52.793 -06:00 [INF] Executed endpoint 'HTTP: POST /login'
+2025-04-09 01:01:52.794 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7080/login - 200 null application/json; charset=utf-8 56717.2757ms
+2025-04-09 01:01:53.745 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/index.html - null null
+2025-04-09 01:01:53.764 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/index.html - 200 null text/html;charset=utf-8 19.7548ms
+2025-04-09 01:01:53.787 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/_vs/browserLink - null null
+2025-04-09 01:01:53.790 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-09 01:01:53.792 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 1.8089ms
+2025-04-09 01:01:53.812 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.4875ms
+2025-04-09 01:01:53.898 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger/v1/swagger.json - null null
+2025-04-09 01:01:53.902 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.5274ms
+2025-04-09 01:02:03.525 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7080/login - application/json 59
+2025-04-09 01:02:03.526 -06:00 [INF] CORS policy execution successful.
+2025-04-09 01:02:03.526 -06:00 [INF] Executing endpoint 'HTTP: POST /login'
+2025-04-09 01:02:03.532 -06:00 [INF] LoginAsync response: 1 for user alestat1@hotmail.com
+2025-04-09 01:02:03.532 -06:00 [INF] Setting HTTP status code 200.
+2025-04-09 01:02:03.533 -06:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-04-09 01:02:03.533 -06:00 [INF] Executed endpoint 'HTTP: POST /login'
+2025-04-09 01:02:03.533 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7080/login - 200 null application/json; charset=utf-8 8.4594ms

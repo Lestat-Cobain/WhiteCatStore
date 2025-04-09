@@ -165,3 +165,5 @@ C:\Users\Alex\source\repos\ProductsMangementAPI\ProductsMangementAPI\bin\Debug\n
 C:\Users\Alex\source\repos\ProductsMangementAPI\ProductsMangementAPI\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\Alex\source\repos\ProductsMangementAPI\ProductsMangementAPI\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Alex\source\repos\ProductsMangementAPI\ProductsMangementAPI\obj\Debug\net8.0\ProductsMangementAPI.sourcelink.json
+C:\Users\Alex\source\repos\ProductsMangementAPI\ProductsMangementAPI\bin\Debug\net8.0\appsettings.Production.json
+C:\Users\Alex\source\repos\ProductsMangementAPI\ProductsMangementAPI\bin\Debug\net8.0\appsettings.QA.json
