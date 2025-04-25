@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
 import { LoginService } from './product.service';
+import { tap, Observable, of } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -8,13 +10,17 @@ import { LoginService } from './product.service';
 export class AuthGuard implements CanActivate {
   constructor(private loginService: LoginService, private router: Router) {}
 
-  canActivate(): boolean {
-    if (this.loginService.isAuthenticated()) {
-      console.log('Im authenticated now =D');
-      return true;
-    }
-    console.log('i cant to recover the token from the localStorage var, sorry :( ... Now for security ill redirect to you to the login page =D');
-    this.router.navigate(['']); // Redirect to login if not authenticated
-    return false;
-  }
+  canActivate(): Observable<boolean> | boolean {
+    return this.loginService.checkSession().pipe(
+      tap((isAuthenticated) => {
+        if (!isAuthenticated) {
+          this.router.navigate(['']);
+        }
+      }),
+      catchError(() => {
+        this.router.navigate(['']);
+        return of(false);
+      })
+    );
+  }  
 }

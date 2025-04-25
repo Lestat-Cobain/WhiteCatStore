@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
   imports: [MatCardModule, CommonModule, MatSelectModule, MatButtonModule, RouterModule],
   template: `
   <div class="product-form-container"> 
-    <form>
+    <div class="form">
       <mat-card class="scanner-container">
           <h2>Add products</h2>       
           <div class="video-container">
@@ -39,7 +39,7 @@ import { RouterModule } from '@angular/router';
           Go Back
         </button>
       </div>
-    </form>
+</div>
   </div>
   `,
   styles: [`
@@ -62,7 +62,7 @@ import { RouterModule } from '@angular/router';
       margin: auto;
     }
 
-    form {
+    .form {
     width: 100%; /* Ensures responsiveness */
     display: block;
     justify-content: center;

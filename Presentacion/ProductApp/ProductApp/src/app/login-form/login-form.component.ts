@@ -25,15 +25,13 @@ export class LoginFormComponent {
   ) {}
 
   onSubmit(): void {
-      this.loginService.getLogin(this.login).subscribe(
-        (response) => {
-        console.log(response.token);
-        this.loginService.storeToken(response.token);
+    this.loginService.getLogin(this.login).subscribe({
+      next: () => {
         this.router.navigate(['product/list']);
       },
-        (error) => { 
-            console.error('Error failed', error)
-          }
-      );
-  }
+      error: (err) => {
+        console.error('Login failed', err);
+      }
+    });
+  }  
 }

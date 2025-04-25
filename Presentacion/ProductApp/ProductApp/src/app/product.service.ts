@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Observable, BehaviorSubject, of } from 'rxjs';
 import { environment } from '../environments/environment'; // Import environment
-import { BehaviorSubject } from 'rxjs';
+import { tap, catchError } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 export interface Product {
   productId: number;
@@ -35,24 +36,24 @@ export class ProductService {
   constructor(private http: HttpClient) {}
 
   getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.apiUrl);
+    return this.http.get<Product[]>(this.apiUrl,{withCredentials: true});
   }
 
   getProduct(productId: number): Observable<Product> {
-    return this.http.get<Product>(`${this.apiUrl}/${productId}`);
+    return this.http.get<Product>(`${this.apiUrl}/${productId}`, {withCredentials: true});
   }
 
   addProduct(product: Product): Observable<Product> {
     console.log('Product to add: ' + product);
-    return this.http.post<Product>(this.apiUrl, product);
+    return this.http.post<Product>(this.apiUrl, product, {withCredentials: true});
   }
 
   updateProduct(product: Product): Observable<Product> {
-    return this.http.put<Product>(this.apiUrl, product);
+    return this.http.put<Product>(this.apiUrl, product, {withCredentials: true});
   }
 
   deleteProduct(productId: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${productId}`);
+    return this.http.delete<void>(`${this.apiUrl}/${productId}`, {withCredentials: true});
   }
 }
 
@@ -60,38 +61,51 @@ export class ProductService {
   providedIn: 'root'
 })
 export class LoginService {
-  private apiUrl = `${environment.apiUrl}`; // Your API base URL
-  private authStatus = new BehaviorSubject<boolean>(this.isAuthenticated());
-
+  private apiUrl = environment.apiUrl;
+  private authStatus = new BehaviorSubject<boolean>(false);
   authStatus$ = this.authStatus.asObservable();
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private router: Router
+  ) {}
 
   getLogin(login: Login): Observable<any> {
-    console.log('Im in getLogin function with this credentials: ');
-    console.log(this.authStatus);
-    this.authStatus.next(true); // Notify subscribers about the change
-    console.log(this.authStatus);
-    return this.http.post(`${this.apiUrl}/login`, login);
+    return this.http.post(`${this.apiUrl}/login`, login, {
+      withCredentials: true
+    }).pipe(
+      tap(() => this.authStatus.next(true))
+    );
   }
 
-  storeToken(token: string): void {
-    console.log(token? 'This is the token: ' + token : 'There is not a token yet');
-    localStorage.setItem('authToken', token);
+  validateAuth(): Observable<boolean> {
+    return this.http.get<boolean>(`${this.apiUrl}/products/validate`, {
+      withCredentials: true
+    }).pipe(
+      tap((isAuth) => this.authStatus.next(isAuth)),
+      catchError(() => {
+        this.authStatus.next(false);
+        return of(false);
+      })
+    );
   }
+
+  checkSession(): Observable<boolean> {
+    return this.http.get<boolean>('https://localhost:7080/products/validate', { withCredentials: true });
+  }  
 
   isAuthenticated(): boolean {
-    // Check if token exists in local storage
-    console.log('Im in isAuthenticated function');
-    console.log(localStorage.getItem('authToken'));
-    return !!localStorage.getItem('authToken');
+    return this.authStatus.getValue();
   }
 
   logout(): void {
-    console.log('Im in logout function');
-    console.log(this.authStatus);
-    this.authStatus.next(false);
-    console.log(this.authStatus);
-    localStorage.removeItem('authToken');
+    this.http.post('https://localhost:7080/logout', {}, { withCredentials: true }).subscribe(() => {
+      this.authStatus.next(false);
+      this.router.navigate(['']);
+    });
+  }  
+
+  setAuthenticated(isAuth: boolean): void {
+    this.authStatus.next(isAuth);
   }
 }
