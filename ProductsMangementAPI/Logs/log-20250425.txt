@@ -210,3 +210,9 @@
 2025-04-25 00:24:20.555 -06:00 [INF] Writing value of type 'ProductModel' as Json.
 2025-04-25 00:24:20.556 -06:00 [INF] Executed endpoint 'HTTP: GET /products/{productid:int}'
 2025-04-25 00:24:20.556 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/8011 - 200 null application/json; charset=utf-8 4.742ms
+2025-04-25 18:32:55.157 -06:00 [INF] User profile is available. Using 'C:\Users\Alex\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-25 18:32:55.729 -06:00 [INF] Now listening on: https://localhost:7080
+2025-04-25 18:32:55.729 -06:00 [INF] Now listening on: http://localhost:5065
+2025-04-25 18:32:55.731 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-25 18:32:55.731 -06:00 [INF] Hosting environment: Development
+2025-04-25 18:32:55.731 -06:00 [INF] Content root path: C:\Users\Alex\source\repos\ProductsMangementAPI\ProductsMangementAPI
