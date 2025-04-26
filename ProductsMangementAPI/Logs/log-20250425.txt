@@ -225,3 +225,82 @@
 2025-04-25 22:58:23.057 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger - null null
 2025-04-25 22:58:23.250 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger - 404 0 null 198.4486ms
 2025-04-25 22:58:23.252 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7080/swagger, Response status code: 404
+2025-04-25 23:12:49.918 -06:00 [INF] User profile is available. Using 'C:\Users\Alex\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-25 23:12:50.206 -06:00 [INF] Now listening on: https://localhost:7080
+2025-04-25 23:12:50.206 -06:00 [INF] Now listening on: http://localhost:5065
+2025-04-25 23:12:50.208 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-25 23:12:50.208 -06:00 [INF] Hosting environment: Development
+2025-04-25 23:12:50.208 -06:00 [INF] Content root path: C:\Users\Alex\source\repos\ProductsMangementAPI\ProductsMangementAPI
+2025-04-25 23:12:50.603 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger - null null
+2025-04-25 23:12:50.741 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger - 404 0 null 143.5674ms
+2025-04-25 23:12:50.743 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7080/swagger, Response status code: 404
+2025-04-25 23:12:56.729 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/index.html - null null
+2025-04-25 23:12:56.824 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/index.html - 200 null text/html;charset=utf-8 95.1528ms
+2025-04-25 23:12:56.832 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger-ui.css - null null
+2025-04-25 23:12:56.832 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger-ui-bundle.js - null null
+2025-04-25 23:12:56.832 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger-ui-standalone-preset.js - null null
+2025-04-25 23:12:56.863 -06:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-25 23:12:56.865 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger-ui.css - 200 143943 text/css 32.7536ms
+2025-04-25 23:12:56.866 -06:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-25 23:12:56.866 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger-ui-standalone-preset.js - 200 339486 text/javascript 34.1015ms
+2025-04-25 23:12:56.870 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-25 23:12:56.875 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 4.6545ms
+2025-04-25 23:12:56.878 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/_vs/browserLink - null null
+2025-04-25 23:12:56.884 -06:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-25 23:12:56.884 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger-ui-bundle.js - 200 1096145 text/javascript 51.7537ms
+2025-04-25 23:12:56.916 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.0937ms
+2025-04-25 23:12:57.075 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger/v1/swagger.json - null null
+2025-04-25 23:12:57.081 -06:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-25 23:12:57.182 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.718ms
+2025-04-25 23:12:58.560 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/favicon-32x32.png - null null
+2025-04-25 23:12:58.560 -06:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-25 23:12:58.560 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/favicon-32x32.png - 200 628 image/png 1.163ms
+2025-04-25 23:13:34.681 -06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7080/login - null null
+2025-04-25 23:13:34.683 -06:00 [INF] CORS policy execution successful.
+2025-04-25 23:13:34.685 -06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7080/login - 204 null null 3.1604ms
+2025-04-25 23:13:34.694 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7080/login - application/json 50
+2025-04-25 23:13:34.694 -06:00 [INF] CORS policy execution successful.
+2025-04-25 23:13:34.695 -06:00 [INF] Executing endpoint 'HTTP: POST /login'
+2025-04-25 23:13:35.048 -06:00 [INF] LoginAsync response: 1 for user alestat1@hotmail.com
+2025-04-25 23:13:35.073 -06:00 [INF] Setting HTTP status code 200.
+2025-04-25 23:13:35.078 -06:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-04-25 23:13:35.082 -06:00 [INF] Executed endpoint 'HTTP: POST /login'
+2025-04-25 23:13:35.082 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7080/login - 200 null application/json; charset=utf-8 388.5423ms
+2025-04-25 23:13:35.088 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-04-25 23:13:35.089 -06:00 [INF] CORS policy execution successful.
+2025-04-25 23:13:35.089 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-04-25 23:13:35.116 -06:00 [INF] Setting HTTP status code 200.
+2025-04-25 23:13:35.116 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-04-25 23:13:35.119 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-04-25 23:13:35.119 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 31.0362ms
+2025-04-25 23:13:35.158 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-04-25 23:13:35.158 -06:00 [INF] CORS policy execution successful.
+2025-04-25 23:13:35.159 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-04-25 23:13:35.166 -06:00 [INF] Setting HTTP status code 200.
+2025-04-25 23:13:35.167 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-04-25 23:13:35.170 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-04-25 23:13:35.170 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 12.5535ms
+2025-04-25 23:13:36.456 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/2010 - null null
+2025-04-25 23:13:36.457 -06:00 [INF] CORS policy execution successful.
+2025-04-25 23:13:36.457 -06:00 [INF] Executing endpoint 'HTTP: GET /products/{productid:int}'
+2025-04-25 23:13:36.503 -06:00 [INF] Setting HTTP status code 200.
+2025-04-25 23:13:36.503 -06:00 [INF] Writing value of type 'ProductModel' as Json.
+2025-04-25 23:13:36.504 -06:00 [INF] Executed endpoint 'HTTP: GET /products/{productid:int}'
+2025-04-25 23:13:36.504 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/2010 - 200 null application/json; charset=utf-8 48.438ms
+2025-04-25 23:13:38.823 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/3 - null null
+2025-04-25 23:13:38.823 -06:00 [INF] CORS policy execution successful.
+2025-04-25 23:13:38.823 -06:00 [INF] Executing endpoint 'HTTP: GET /products/{productid:int}'
+2025-04-25 23:13:38.836 -06:00 [INF] Setting HTTP status code 200.
+2025-04-25 23:13:38.836 -06:00 [INF] Writing value of type 'ProductModel' as Json.
+2025-04-25 23:13:38.844 -06:00 [INF] Executed endpoint 'HTTP: GET /products/{productid:int}'
+2025-04-25 23:13:38.844 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/3 - 200 null application/json; charset=utf-8 21.9582ms
+2025-04-25 23:13:40.930 -06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7080/logout - null null
+2025-04-25 23:13:40.930 -06:00 [INF] CORS policy execution successful.
+2025-04-25 23:13:40.931 -06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7080/logout - 204 null null 0.7188ms
+2025-04-25 23:13:40.933 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7080/logout - application/json 2
+2025-04-25 23:13:40.933 -06:00 [INF] CORS policy execution successful.
+2025-04-25 23:13:40.933 -06:00 [INF] Executing endpoint 'HTTP: POST /logout'
+2025-04-25 23:13:43.421 -06:00 [INF] Setting HTTP status code 200.
+2025-04-25 23:13:43.421 -06:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-04-25 23:13:43.421 -06:00 [INF] Executed endpoint 'HTTP: POST /logout'
+2025-04-25 23:13:43.421 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7080/logout - 200 null application/json; charset=utf-8 2488.0312ms

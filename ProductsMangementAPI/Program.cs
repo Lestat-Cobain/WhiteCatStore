@@ -72,23 +72,17 @@ app.UseAuthorization();
 var productApi = app.MapGroup("/products")
     .RequireAuthorization();
 
-app.MapPost("/login", async (LoginModel login, ISpProductRepository SpProductRepository, ILoginRepository LoginRepository, HttpResponse response) =>
+app.MapPost("/login", async (LoginModel login, ISpProductRepository SpProductRepository, ILoginRepository LoginRepository, CookieHelper cookieHelper, HttpResponse response) =>
 {
     var loginResult = await SpProductRepository.LoginAsync(login);
+
     Log.Information("LoginAsync response: {Response} for user {Email}", loginResult, login.Email);
 
     if (loginResult == 1)
     {
         var token = await LoginRepository.GenerateJwtToken(login.Email);
 
-        // Set the token as an HTTP-only cookie
-        response.Cookies.Append("auth_token", token, new CookieOptions
-        {
-            //HttpOnly = true,
-            Secure = false,//app.Environment.IsDevelopment() ? false : true, // must be true for SameSite=None to work
-            //SameSite = SameSiteMode.None, // allows cross-origin cookie sending
-            Expires = DateTimeOffset.UtcNow.AddHours(1)
-        });
+        cookieHelper.SetCookie("auth_token", token, DateTime.Now.AddMinutes(15), 15);
 
         return Results.Ok(new { message = "Login successful" });
     }
