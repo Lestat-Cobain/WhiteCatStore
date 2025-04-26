@@ -84,9 +84,9 @@ app.MapPost("/login", async (LoginModel login, ISpProductRepository SpProductRep
         // Set the token as an HTTP-only cookie
         response.Cookies.Append("auth_token", token, new CookieOptions
         {
-            HttpOnly = true,
+            //HttpOnly = true,
             Secure = false,//app.Environment.IsDevelopment() ? false : true, // must be true for SameSite=None to work
-            SameSite = SameSiteMode.None, // allows cross-origin cookie sending
+            //SameSite = SameSiteMode.None, // allows cross-origin cookie sending
             Expires = DateTimeOffset.UtcNow.AddHours(1)
         });
 

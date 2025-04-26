@@ -216,3 +216,12 @@
 2025-04-25 18:32:55.731 -06:00 [INF] Application started. Press Ctrl+C to shut down.
 2025-04-25 18:32:55.731 -06:00 [INF] Hosting environment: Development
 2025-04-25 18:32:55.731 -06:00 [INF] Content root path: C:\Users\Alex\source\repos\ProductsMangementAPI\ProductsMangementAPI
+2025-04-25 22:58:22.316 -06:00 [INF] User profile is available. Using 'C:\Users\Alex\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-25 22:58:22.598 -06:00 [INF] Now listening on: https://localhost:7080
+2025-04-25 22:58:22.598 -06:00 [INF] Now listening on: http://localhost:5065
+2025-04-25 22:58:22.600 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-25 22:58:22.600 -06:00 [INF] Hosting environment: Development
+2025-04-25 22:58:22.600 -06:00 [INF] Content root path: C:\Users\Alex\source\repos\ProductsMangementAPI\ProductsMangementAPI
+2025-04-25 22:58:23.057 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/swagger - null null
+2025-04-25 22:58:23.250 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/swagger - 404 0 null 198.4486ms
+2025-04-25 22:58:23.252 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7080/swagger, Response status code: 404
