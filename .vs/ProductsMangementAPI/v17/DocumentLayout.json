@@ -11,24 +11,8 @@
       "RelativeMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|solutionrelative:productsmangementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\Presentacion\\ProductApp\\ProductApp\\src\\app\\login-form\\login-form.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Presentacion\\ProductApp\\ProductApp\\src\\app\\login-form\\login-form.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\repository\\spproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|solutionrelative:productsmangementapi\\repository\\spproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|solutionrelative:productsmangementapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|solutionrelative:productsmangementapi\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|solutionrelative:productsmangementapi\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\appsettings.qa.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -37,6 +21,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|solutionrelative:productsmangementapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\Presentacion\\ProductApp\\ProductApp\\src\\app\\login-form\\login-form.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Presentacion\\ProductApp\\ProductApp\\src\\app\\login-form\\login-form.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\repository\\spproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|solutionrelative:productsmangementapi\\repository\\spproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|solutionrelative:productsmangementapi\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|solutionrelative:productsmangementapi\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\productsmangementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -62,7 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "login-form.component.ts",
               "DocumentMoniker": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\Presentacion\\ProductApp\\ProductApp\\src\\app\\login-form\\login-form.component.ts",
               "RelativeDocumentMoniker": "Presentacion\\ProductApp\\ProductApp\\src\\app\\login-form\\login-form.component.ts",
@@ -80,14 +80,14 @@
               "RelativeDocumentMoniker": "ProductsMangementAPI\\Helpers\\CookieHelper.cs",
               "ToolTip": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\ProductsMangementAPI\\Helpers\\CookieHelper.cs",
               "RelativeToolTip": "ProductsMangementAPI\\Helpers\\CookieHelper.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAApwCUAAAAWAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAUwBkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T01:57:46.281Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\ProductsMangementAPI\\Repository\\ProductRepository.cs",
               "RelativeDocumentMoniker": "ProductsMangementAPI\\Repository\\ProductRepository.cs",
@@ -99,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "appsettings.Production.json",
               "DocumentMoniker": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\ProductsMangementAPI\\appsettings.Production.json",
               "RelativeDocumentMoniker": "ProductsMangementAPI\\appsettings.Production.json",
@@ -107,11 +107,12 @@
               "RelativeToolTip": "ProductsMangementAPI\\appsettings.Production.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T16:03:57.305Z"
+              "WhenOpened": "2025-04-08T16:03:57.305Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "appsettings.QA.json",
               "DocumentMoniker": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\ProductsMangementAPI\\appsettings.QA.json",
               "RelativeDocumentMoniker": "ProductsMangementAPI\\appsettings.QA.json",
@@ -119,7 +120,8 @@
               "RelativeToolTip": "ProductsMangementAPI\\appsettings.QA.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T16:03:14.271Z"
+              "WhenOpened": "2025-04-08T16:03:14.271Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -135,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\ProductsMangementAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ProductsMangementAPI\\appsettings.Development.json",
@@ -143,7 +145,8 @@
               "RelativeToolTip": "ProductsMangementAPI\\appsettings.Development.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T06:09:06.457Z"
+              "WhenOpened": "2025-04-08T06:09:06.457Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -153,14 +156,14 @@
               "RelativeDocumentMoniker": "ProductsMangementAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\ProductsMangementAPI\\Program.cs",
               "RelativeToolTip": "ProductsMangementAPI\\Program.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAMwH4AAAATAAAA",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAMwFQAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T02:40:12.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "LoginRepository.cs",
               "DocumentMoniker": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\ProductsMangementAPI\\Repository\\LoginRepository.cs",
               "RelativeDocumentMoniker": "ProductsMangementAPI\\Repository\\LoginRepository.cs",
@@ -172,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "SpProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\ProductsMangementAPI\\Repository\\SpProductRepository.cs",
               "RelativeDocumentMoniker": "ProductsMangementAPI\\Repository\\SpProductRepository.cs",

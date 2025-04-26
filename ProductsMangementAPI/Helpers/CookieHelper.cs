@@ -26,8 +26,8 @@
                 Secure = true,
                 SameSite = SameSiteMode.None, //Required for CORS with AllowCredentials
                 Expires = tokenExpirationDate,
-                MaxAge = TimeSpan.FromMinutes(expirationMinutes),
-                IsEssential = true,
+                MaxAge = TimeSpan.FromMinutes(expirationMinutes)
+                //IsEssential = true,
             };
 
             _httpContextAccessor.HttpContext?.Response.Cookies.Append(name, value, cookieOptions);
