@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\helpers\\cookiehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|solutionrelative:productsmangementapi\\helpers\\cookiehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|solutionrelative:productsmangementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\helpers\\cookiehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|solutionrelative:productsmangementapi\\helpers\\cookiehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{018613FB-4B5C-404E-8190-61BC64FA7C4E}|ProductsMangementAPI\\ProductsMangementAPI.csproj|c:\\users\\alex\\source\\repos\\productsmangementapi\\productsmangementapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,13 +74,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CookieHelper.cs",
               "DocumentMoniker": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\ProductsMangementAPI\\Helpers\\CookieHelper.cs",
               "RelativeDocumentMoniker": "ProductsMangementAPI\\Helpers\\CookieHelper.cs",
               "ToolTip": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\ProductsMangementAPI\\Helpers\\CookieHelper.cs",
               "RelativeToolTip": "ProductsMangementAPI\\Helpers\\CookieHelper.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAUwBkAAAAeAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowBoAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T01:57:46.281Z",
               "EditorCaption": ""
@@ -107,8 +107,7 @@
               "RelativeToolTip": "ProductsMangementAPI\\appsettings.Production.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T16:03:57.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T16:03:57.305Z"
             },
             {
               "$type": "Document",
@@ -120,8 +119,7 @@
               "RelativeToolTip": "ProductsMangementAPI\\appsettings.QA.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T16:03:14.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T16:03:14.271Z"
             },
             {
               "$type": "Document",
@@ -145,18 +143,17 @@
               "RelativeToolTip": "ProductsMangementAPI\\appsettings.Development.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T06:09:06.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T06:09:06.457Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\ProductsMangementAPI\\Program.cs",
               "RelativeDocumentMoniker": "ProductsMangementAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Alex\\source\\repos\\ProductsMangementAPI\\ProductsMangementAPI\\Program.cs",
               "RelativeToolTip": "ProductsMangementAPI\\Program.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAMwFQAAAAeAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAAMwD8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T02:40:12.005Z",
               "EditorCaption": ""
