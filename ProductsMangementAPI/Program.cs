@@ -51,6 +51,7 @@ builder.Services.AddScoped<IProductRepository<ProductModel>, ProductRepository>(
 builder.Services.AddScoped<ISpProductRepository, SpProductRepository>(sp => new SpProductRepository(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddSingleton<ILoginRepository, LoginRepository>();
 
+//New CORS configuration
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngularApp", policy =>
