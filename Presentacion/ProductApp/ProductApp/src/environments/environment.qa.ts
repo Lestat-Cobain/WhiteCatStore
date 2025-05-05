@@ -1,6 +1,6 @@
 export const environment = {
     production: false,
-    qaUrl: 'https://localhost:3200',
-    apiUrl: 'http://localhost:3090'
+    qaUrl: 'http://192.168.100.5:3200',
+    apiUrl: 'http://192.168.100.5:3090'
   };
   

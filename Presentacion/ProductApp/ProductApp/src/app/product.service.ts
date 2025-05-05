@@ -91,7 +91,7 @@ export class LoginService {
   }
 
   checkSession(): Observable<boolean> {
-    return this.http.get<boolean>('https://localhost:7080/products/validate', { withCredentials: true });
+    return this.http.get<boolean>(`${this.apiUrl}/products/validate`, { withCredentials: true });
   }  
 
   isAuthenticated(): boolean {
@@ -99,7 +99,7 @@ export class LoginService {
   }
 
   logout(): void {
-    this.http.post('https://localhost:7080/logout', {}, { withCredentials: true }).subscribe(() => {
+    this.http.post(`${this.apiUrl}/logout`, {}, { withCredentials: true }).subscribe(() => {
       this.authStatus.next(false);
       this.router.navigate(['']);
     });
