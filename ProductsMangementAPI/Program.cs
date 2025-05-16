@@ -91,6 +91,7 @@ app.MapPost("/login", async (LoginModel login, ISpProductRepository SpProductRep
     return Results.Unauthorized();
 });
 
+//Comment added to test
 app.MapGet("/products/validate", (HttpRequest request) =>
 {
     var token = request.Cookies["auth_token"];
