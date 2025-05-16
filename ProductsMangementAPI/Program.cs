@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Serilog;
-using Azure;
+using System.IdentityModel.Tokens.Jwt;
+using ProductsMangementAPI.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,47 +45,90 @@ builder.Services.AddAuthorization();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<CookieHelper>();
 builder.Services.AddScoped<IProductRepository<ProductModel>, ProductRepository>();
 builder.Services.AddScoped<ISpProductRepository, SpProductRepository>(sp => new SpProductRepository(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddSingleton<ILoginRepository, LoginRepository>();
 
+//New CORS configuration 666
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAllOrigins", builder =>
+    options.AddPolicy("AllowAngularApp", policy =>
     {
-        builder
-            .AllowAnyOrigin()      // Allow any domain (e.g., Angular app)
-            .AllowAnyMethod()      // Allow any HTTP method (GET, POST, etc.)
-            .AllowAnyHeader();     // Allow any headers
+        policy.WithOrigins("http://localhost:4200", "http://localhost:3200", "http://192.168.100.5:3200","https://localhost:3200", "https://192.168.100.5:3200")
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials();
     });
 });
 
 var app = builder.Build();
 
+app.UseCors("AllowAngularApp");
 app.UseAuthentication();
 app.UseAuthorization();
-
-// 2. Enable the CORS policy globally or for specific endpoints
-app.UseCors("AllowAllOrigins");
 
 // Grouping the routes that require authorization
 var productApi = app.MapGroup("/products")
     .RequireAuthorization();
 
-app.MapPost("/login", async (LoginModel login, ISpProductRepository SpProductRepository, ILoginRepository LoginRepository) =>
+app.MapPost("/login", async (LoginModel login, ISpProductRepository SpProductRepository, ILoginRepository LoginRepository, CookieHelper cookieHelper, HttpResponse response) =>
 {
-    var response = await SpProductRepository.LoginAsync(login);
-    Log.Information("LoginAsync response: {Response} for user {Email}", response, login.Email);
-    // Validate user credentials (you could check from a database or use a mock)
-    if (response == 1)
+    var loginResult = await SpProductRepository.LoginAsync(login);
+
+    Log.Information("LoginAsync response: {Response} for user {Email}", loginResult, login.Email);
+
+    if (loginResult == 1)
     {
         var token = await LoginRepository.GenerateJwtToken(login.Email);
-        return Results.Ok(new { Token = token });
+
+        cookieHelper.SetCookie("auth_token", token, DateTime.Now.AddMinutes(15), 15);
+
+        return Results.Ok(new { message = "Login successful" });
     }
 
     return Results.Unauthorized();
 });
 
+//Comment added to test
+app.MapGet("/products/validate", (HttpRequest request) =>
+{
+    var token = request.Cookies["auth_token"];
+    if (string.IsNullOrEmpty(token))
+    {
+        return Results.Unauthorized();
+    }
+
+    var tokenHandler = new JwtSecurityTokenHandler();
+
+    try
+    {
+        tokenHandler.ValidateToken(token, new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = false,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["JwtParams:Url"], // Change to your issuer
+            ValidAudience = builder.Configuration["JwtParams:Url"], // Change to your audience
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("your_super_long_secret_key_that_is_32_chars")) // Secret Key
+        }, out SecurityToken validatedToken);
+
+        return Results.Ok(true);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("JWT validation failed: " + ex.Message);
+        return Results.Unauthorized();
+    }
+});
+
+app.MapPost("/logout", (CookieHelper cookieHelper, HttpResponse response) =>
+{
+    cookieHelper.RemoveCookie("auth_token");
+    return Results.Ok(new { message = "Logged out" });
+});
 
 app.MapGet("/products", async (ISpProductRepository SpProductRepository) =>
 {  

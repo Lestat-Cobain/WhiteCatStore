@@ -12,6 +12,6 @@ export class SecureService {
   constructor(private http: HttpClient) {}
 
   getSecureData(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/secure`    );
+    return this.http.get(`${this.apiUrl}/secure`);
   }
 }

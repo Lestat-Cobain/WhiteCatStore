@@ -26,14 +26,12 @@ h2 {
 
 /* Responsive buttons in action column */
 .buttons-col {
-  display: flex;
-  
-  flex-wrap: wrap;
+  display: center;
   gap: 10px; /* Adds spacing between buttons */
 }
 
 /* Styles for tablets and smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
   .product-list-container {
     padding: 10px;
   }
@@ -59,7 +57,7 @@ h2 {
 }
 
 /* Adjustments for mobile devices */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .product-list-container {
     padding: 5px;
   }

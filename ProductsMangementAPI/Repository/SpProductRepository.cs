@@ -4,6 +4,7 @@ using ProductsMangementAPI.Models;
 using ProductsMangementAPI.Models.DTOs;
 using Serilog;
 using System.Data;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ProductsMangementAPI.Repository
 {
@@ -181,6 +182,22 @@ namespace ProductsMangementAPI.Repository
 
         public async Task<int> UpdateProductDetailsAsync(ProductModel model)
         {
+            // Extract MIME type and Base64 content correctly
+            var parts = model.ImageUrl.Split(",");
+            if (parts.Length < 2)
+                throw new ArgumentException("Invalid ImageUrl format");
+
+            string imageMimeType = parts[0].Replace("data:", "").Replace(";base64", "").Trim();
+            byte[]? imageBytes = Convert.FromBase64String(parts[1]);
+
+            // Determine Image ID based on MIME type
+            int imageId = imageMimeType switch
+            {
+                "image/jpeg" or "image/jpg" => 1,
+                "image/png" => 2,
+                _ => 3 // Default case
+            };
+
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 await connection.OpenAsync();
@@ -196,6 +213,8 @@ namespace ProductsMangementAPI.Repository
                     command.Parameters.Add(new SqlParameter("@productDetails", model.Details.ProductDetails));
                     command.Parameters.Add(new SqlParameter("@guaranteTime", model.Details.GuaranteeTime));
                     command.Parameters.Add(new SqlParameter("@inStock", model.Details.InStock));
+                    command.Parameters.AddWithValue("@productImage", imageBytes);
+                    command.Parameters.AddWithValue("@imageId", imageId);
 
                     // Execute the command and retrieve the new product ID
                     var result = await command.ExecuteScalarAsync();
