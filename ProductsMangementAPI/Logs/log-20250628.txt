@@ -1,0 +1,842 @@
+2025-06-28 01:18:37.221 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:37.231 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:37.232 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:37.232 -06:00 [INF] Setting HTTP status code 401.
+2025-06-28 01:18:37.232 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:37.232 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 401 0 null 12.1638ms
+2025-06-28 01:18:37.269 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:37.269 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:37.269 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:37.269 -06:00 [INF] Setting HTTP status code 401.
+2025-06-28 01:18:37.269 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:37.269 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 401 0 null 0.791ms
+2025-06-28 01:18:44.434 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:44.434 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:44.434 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:44.434 -06:00 [INF] Setting HTTP status code 401.
+2025-06-28 01:18:44.434 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:44.434 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 401 0 null 0.5836ms
+2025-06-28 01:18:49.341 -06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7080/login - null null
+2025-06-28 01:18:49.342 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:49.342 -06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7080/login - 204 null null 0.7717ms
+2025-06-28 01:18:49.343 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7080/login - application/json 50
+2025-06-28 01:18:49.343 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:49.343 -06:00 [INF] Executing endpoint 'HTTP: POST /login'
+2025-06-28 01:18:49.356 -06:00 [INF] LoginAsync response: 1 for user alestat1@hotmail.com
+2025-06-28 01:18:49.357 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:49.357 -06:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-06-28 01:18:49.357 -06:00 [INF] Executed endpoint 'HTTP: POST /login'
+2025-06-28 01:18:49.357 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7080/login - 200 null application/json; charset=utf-8 13.9689ms
+2025-06-28 01:18:49.363 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:49.364 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:49.364 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:49.364 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:49.364 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:49.364 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:49.364 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6456ms
+2025-06-28 01:18:49.402 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:18:49.402 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:49.402 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:18:49.404 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:49.404 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:18:49.404 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:18:49.405 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 2.6367ms
+2025-06-28 01:18:52.577 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:52.578 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:52.578 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:52.578 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:52.578 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:52.578 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:52.578 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.65ms
+2025-06-28 01:18:52.620 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:52.620 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:52.620 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:52.620 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:52.620 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:52.620 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:52.620 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.7456ms
+2025-06-28 01:18:52.669 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:18:52.669 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:52.669 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:18:52.670 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:52.670 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:18:52.670 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:18:52.670 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.8554ms
+2025-06-28 01:18:55.673 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:55.673 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:55.673 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:55.673 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:55.673 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:55.673 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:55.673 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6554ms
+2025-06-28 01:18:55.701 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:55.702 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:55.702 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:55.702 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:55.702 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:55.702 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:55.702 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6862ms
+2025-06-28 01:18:55.748 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:18:55.748 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:55.748 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:18:55.749 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:55.749 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:18:55.749 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:18:55.750 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.7211ms
+2025-06-28 01:18:56.115 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:56.116 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:56.116 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.116 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:56.116 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:56.116 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.116 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6312ms
+2025-06-28 01:18:56.144 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:56.144 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:56.144 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.144 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:56.144 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:56.144 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.144 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6552ms
+2025-06-28 01:18:56.189 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:18:56.189 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:56.189 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:18:56.190 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:56.190 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:18:56.191 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:18:56.191 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.7951ms
+2025-06-28 01:18:56.436 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:56.436 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:56.436 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.436 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:56.436 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:56.436 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.437 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6498ms
+2025-06-28 01:18:56.465 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:56.465 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:56.466 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.466 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:56.466 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:56.466 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.466 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.7168ms
+2025-06-28 01:18:56.511 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:18:56.511 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:56.511 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:18:56.512 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:56.512 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:18:56.512 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:18:56.512 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.6727ms
+2025-06-28 01:18:56.702 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:56.702 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:56.702 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.702 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:56.702 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:56.702 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.702 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6697ms
+2025-06-28 01:18:56.729 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:56.730 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:56.730 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.730 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:56.730 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:56.730 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.730 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.7186ms
+2025-06-28 01:18:56.773 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:18:56.773 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:56.773 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:18:56.774 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:56.774 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:18:56.775 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:18:56.775 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.6764ms
+2025-06-28 01:18:56.943 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:56.943 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:56.944 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.944 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:56.944 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:56.944 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.944 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6077ms
+2025-06-28 01:18:56.972 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:56.972 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:56.972 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.972 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:56.972 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:56.972 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:56.972 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.7283ms
+2025-06-28 01:18:57.020 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:18:57.021 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:57.021 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:18:57.022 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:57.022 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:18:57.022 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:18:57.022 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.6718ms
+2025-06-28 01:18:57.643 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/1009 - null null
+2025-06-28 01:18:57.644 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:57.644 -06:00 [INF] Executing endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:18:57.649 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:57.649 -06:00 [INF] Writing value of type 'ProductModel' as Json.
+2025-06-28 01:18:57.650 -06:00 [INF] Executed endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:18:57.650 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/1009 - 200 null application/json; charset=utf-8 6.5225ms
+2025-06-28 01:18:58.200 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:58.200 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:58.200 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:58.200 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:58.200 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:58.200 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:58.200 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6543ms
+2025-06-28 01:18:58.228 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:58.228 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:58.228 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:58.228 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:58.228 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:58.228 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:58.228 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6676ms
+2025-06-28 01:18:58.275 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:18:58.276 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:58.276 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:18:58.277 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:58.277 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:18:58.277 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:18:58.277 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.8117ms
+2025-06-28 01:18:59.377 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:18:59.377 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:59.377 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:59.377 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:59.377 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:18:59.377 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:18:59.377 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.7085ms
+2025-06-28 01:18:59.409 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/1009 - null null
+2025-06-28 01:18:59.409 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:18:59.409 -06:00 [INF] Executing endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:18:59.410 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:18:59.410 -06:00 [INF] Writing value of type 'ProductModel' as Json.
+2025-06-28 01:18:59.411 -06:00 [INF] Executed endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:18:59.411 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/1009 - 200 null application/json; charset=utf-8 2.3545ms
+2025-06-28 01:19:00.306 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:19:00.306 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:19:00.306 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:19:00.306 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:19:00.306 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:19:00.306 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:19:00.306 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.8115ms
+2025-06-28 01:19:00.334 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:19:00.334 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:19:00.334 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:19:00.334 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:19:00.334 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:19:00.334 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:19:00.334 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6636ms
+2025-06-28 01:19:00.385 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/1009 - null null
+2025-06-28 01:19:00.386 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:19:00.386 -06:00 [INF] Executing endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:19:00.387 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:19:00.387 -06:00 [INF] Writing value of type 'ProductModel' as Json.
+2025-06-28 01:19:00.388 -06:00 [INF] Executed endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:19:00.388 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/1009 - 200 null application/json; charset=utf-8 2.672ms
+2025-06-28 01:19:04.179 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:19:04.179 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:19:04.179 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:19:04.179 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:19:04.179 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:19:04.179 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:19:04.179 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.661ms
+2025-06-28 01:19:04.206 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:19:04.206 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:19:04.206 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:19:04.206 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:19:04.206 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:19:04.207 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:19:04.207 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6879ms
+2025-06-28 01:19:04.256 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/1009 - null null
+2025-06-28 01:19:04.256 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:19:04.256 -06:00 [INF] Executing endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:19:04.257 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:19:04.257 -06:00 [INF] Writing value of type 'ProductModel' as Json.
+2025-06-28 01:19:04.258 -06:00 [INF] Executed endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:19:04.258 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/1009 - 200 null application/json; charset=utf-8 2.5825ms
+2025-06-28 01:19:05.915 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:19:05.915 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:19:05.915 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:19:05.916 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:19:05.916 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:19:05.916 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:19:05.916 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.7569ms
+2025-06-28 01:19:05.920 -06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7080/products - null null
+2025-06-28 01:19:05.920 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:19:05.920 -06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7080/products - 204 null null 0.4475ms
+2025-06-28 01:19:05.921 -06:00 [INF] Request starting HTTP/2 PUT https://localhost:7080/products - application/json 27517
+2025-06-28 01:19:05.921 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:19:05.922 -06:00 [INF] Executing endpoint 'HTTP: PUT /products'
+2025-06-28 01:19:05.927 -06:00 [INF] Setting HTTP status code 204.
+2025-06-28 01:19:05.927 -06:00 [INF] Executed endpoint 'HTTP: PUT /products'
+2025-06-28 01:19:05.927 -06:00 [INF] Request finished HTTP/2 PUT https://localhost:7080/products - 204 null null 6.0069ms
+2025-06-28 01:19:05.935 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:19:05.935 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:19:05.935 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:19:05.935 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:19:05.935 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:19:05.935 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:19:05.936 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6913ms
+2025-06-28 01:19:05.958 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:19:05.959 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:19:05.959 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:19:05.960 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:19:05.960 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:19:05.960 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:19:05.960 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.8559ms
+2025-06-28 01:22:03.541 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:03.541 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:03.542 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:03.542 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:03.542 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:03.542 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:03.542 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 1.2168ms
+2025-06-28 01:22:03.562 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/3009 - null null
+2025-06-28 01:22:03.562 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:03.562 -06:00 [INF] Executing endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:22:03.566 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:03.566 -06:00 [INF] Writing value of type 'ProductModel' as Json.
+2025-06-28 01:22:03.566 -06:00 [INF] Executed endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:22:03.566 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/3009 - 200 null application/json; charset=utf-8 3.9458ms
+2025-06-28 01:22:04.776 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:04.776 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:04.776 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:04.776 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:04.776 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:04.776 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:04.777 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6097ms
+2025-06-28 01:22:04.794 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:22:04.795 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:04.795 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:22:04.796 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:04.796 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:22:04.796 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:22:04.796 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.7661ms
+2025-06-28 01:22:06.107 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:06.107 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:06.107 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:06.107 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:06.107 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:06.107 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:06.107 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5755ms
+2025-06-28 01:22:06.136 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:06.136 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:06.136 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:06.136 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:06.136 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:06.136 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:06.136 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6323ms
+2025-06-28 01:22:06.190 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:22:06.190 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:06.191 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:22:06.192 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:06.192 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:22:06.192 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:22:06.192 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.9748ms
+2025-06-28 01:22:06.921 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:06.922 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:06.922 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:06.922 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:06.922 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:06.922 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:06.922 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6903ms
+2025-06-28 01:22:06.952 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/8011 - null null
+2025-06-28 01:22:06.952 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:06.952 -06:00 [INF] Executing endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:22:06.953 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:06.953 -06:00 [INF] Writing value of type 'ProductModel' as Json.
+2025-06-28 01:22:06.954 -06:00 [INF] Executed endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:22:06.954 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/8011 - 200 null application/json; charset=utf-8 2.3846ms
+2025-06-28 01:22:07.683 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:07.683 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:07.683 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:07.683 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:07.683 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:07.683 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:07.683 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.4713ms
+2025-06-28 01:22:07.710 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:07.710 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:07.710 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:07.710 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:07.710 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:07.710 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:07.711 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6882ms
+2025-06-28 01:22:07.759 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/8011 - null null
+2025-06-28 01:22:07.759 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:07.759 -06:00 [INF] Executing endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:22:07.760 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:07.760 -06:00 [INF] Writing value of type 'ProductModel' as Json.
+2025-06-28 01:22:07.761 -06:00 [INF] Executed endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:22:07.761 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/8011 - 200 null application/json; charset=utf-8 2.4088ms
+2025-06-28 01:22:11.012 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:11.013 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:11.013 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:11.013 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:11.013 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:11.013 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:11.013 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5991ms
+2025-06-28 01:22:11.017 -06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7080/products - null null
+2025-06-28 01:22:11.017 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:11.017 -06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7080/products - 204 null null 0.455ms
+2025-06-28 01:22:11.018 -06:00 [INF] Request starting HTTP/2 PUT https://localhost:7080/products - application/json 12333
+2025-06-28 01:22:11.019 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:11.019 -06:00 [INF] Executing endpoint 'HTTP: PUT /products'
+2025-06-28 01:22:11.024 -06:00 [INF] Setting HTTP status code 204.
+2025-06-28 01:22:11.024 -06:00 [INF] Executed endpoint 'HTTP: PUT /products'
+2025-06-28 01:22:11.024 -06:00 [INF] Request finished HTTP/2 PUT https://localhost:7080/products - 204 null null 5.6481ms
+2025-06-28 01:22:11.033 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:11.033 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:11.033 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:11.033 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:11.033 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:11.033 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:11.033 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.7119ms
+2025-06-28 01:22:11.055 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:22:11.056 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:11.056 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:22:11.057 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:11.057 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:22:11.058 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:22:11.058 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 2.6737ms
+2025-06-28 01:22:12.121 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/8010 - null null
+2025-06-28 01:22:12.121 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:12.121 -06:00 [INF] Executing endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:22:12.161 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:12.161 -06:00 [INF] Writing value of type 'ProductModel' as Json.
+2025-06-28 01:22:12.161 -06:00 [INF] Executed endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:22:12.161 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/8010 - 200 null application/json; charset=utf-8 40.7735ms
+2025-06-28 01:22:12.654 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:12.654 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:12.654 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:12.654 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:12.654 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:12.654 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:12.654 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5897ms
+2025-06-28 01:22:12.682 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:12.682 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:12.682 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:12.682 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:12.682 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:12.682 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:12.682 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6842ms
+2025-06-28 01:22:12.725 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:22:12.726 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:12.726 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:22:12.727 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:12.727 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:22:12.727 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:22:12.727 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.5906ms
+2025-06-28 01:22:13.863 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/8010 - null null
+2025-06-28 01:22:13.863 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:13.863 -06:00 [INF] Executing endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:22:13.865 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:13.865 -06:00 [INF] Writing value of type 'ProductModel' as Json.
+2025-06-28 01:22:13.865 -06:00 [INF] Executed endpoint 'HTTP: GET /products/{productid:int}'
+2025-06-28 01:22:13.865 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/8010 - 200 null application/json; charset=utf-8 2.7282ms
+2025-06-28 01:22:14.747 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:14.748 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:14.748 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:14.748 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:14.748 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:14.748 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:14.748 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5871ms
+2025-06-28 01:22:14.776 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:14.776 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:14.776 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:14.776 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:14.776 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:14.776 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:14.776 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.8035ms
+2025-06-28 01:22:14.822 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:22:14.822 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:14.822 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:22:14.823 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:14.823 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:22:14.823 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:22:14.823 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.6468ms
+2025-06-28 01:22:17.320 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:22:17.320 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:22:17.320 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:17.320 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:22:17.320 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:22:17.320 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:22:17.320 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5033ms
+2025-06-28 01:23:24.119 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:23:24.120 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:23:24.120 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:24.120 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:23:24.120 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:23:24.120 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:24.120 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.7435ms
+2025-06-28 01:23:24.156 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:23:24.156 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:23:24.156 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:24.156 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:23:24.156 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:23:24.156 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:24.156 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.774ms
+2025-06-28 01:23:36.639 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:23:36.639 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:23:36.639 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:36.639 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:23:36.639 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:23:36.639 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:36.639 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.634ms
+2025-06-28 01:23:36.666 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:23:36.666 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:23:36.666 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:36.666 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:23:36.666 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:23:36.666 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:36.666 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.7248ms
+2025-06-28 01:23:39.022 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:23:39.022 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:23:39.022 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:39.022 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:23:39.022 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:23:39.022 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:39.022 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6091ms
+2025-06-28 01:23:39.054 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:23:39.054 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:23:39.055 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:23:39.057 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:23:39.057 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:23:39.057 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:23:39.057 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 2.8913ms
+2025-06-28 01:23:39.986 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:23:39.986 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:23:39.986 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:39.987 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:23:39.987 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:23:39.987 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:39.987 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5601ms
+2025-06-28 01:23:41.000 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:23:41.000 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:23:41.000 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:41.000 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:23:41.000 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:23:41.000 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:41.000 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5725ms
+2025-06-28 01:23:41.019 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:23:41.019 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:23:41.019 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:23:41.020 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:23:41.020 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:23:41.020 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:23:41.020 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.5125ms
+2025-06-28 01:23:41.900 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:23:41.900 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:23:41.900 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:41.901 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:23:41.901 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:23:41.901 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:23:41.901 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.9186ms
+2025-06-28 01:24:23.425 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:24:23.425 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:24:23.425 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:24:23.426 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:24:23.426 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:24:23.426 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:24:23.426 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 1.2713ms
+2025-06-28 01:24:23.443 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:24:23.444 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:24:23.444 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:24:23.445 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:24:23.446 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:24:23.446 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:24:23.446 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 2.4071ms
+2025-06-28 01:26:00.305 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:26:00.306 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:00.306 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:00.306 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:00.306 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:26:00.307 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:00.307 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 1.6275ms
+2025-06-28 01:26:00.342 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:26:00.342 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:00.342 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:00.342 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:00.342 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:26:00.342 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:00.342 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.701ms
+2025-06-28 01:26:00.417 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:26:00.417 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:00.417 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:26:00.420 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:00.420 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:26:00.420 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:26:00.420 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 2.9656ms
+2025-06-28 01:26:02.258 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:26:02.258 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:02.258 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:02.258 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:02.258 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:26:02.258 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:02.258 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6415ms
+2025-06-28 01:26:05.083 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:26:05.083 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:05.083 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:05.083 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:05.083 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:26:05.083 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:05.083 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5679ms
+2025-06-28 01:26:05.098 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:26:05.098 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:05.099 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:26:05.100 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:05.100 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:26:05.100 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:26:05.100 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.9396ms
+2025-06-28 01:26:17.263 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:26:17.263 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:17.263 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:17.263 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:17.263 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:26:17.263 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:17.263 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6954ms
+2025-06-28 01:26:19.645 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:26:19.645 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:19.645 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:19.645 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:19.645 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:26:19.645 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:19.645 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5357ms
+2025-06-28 01:26:19.659 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:26:19.659 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:19.659 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:26:19.660 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:19.660 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:26:19.661 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:26:19.661 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.9405ms
+2025-06-28 01:26:22.049 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:26:22.049 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:22.049 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:22.049 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:22.049 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:26:22.049 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:22.049 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5843ms
+2025-06-28 01:26:22.091 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:26:22.092 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:22.092 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:22.092 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:22.092 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:26:22.092 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:22.092 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.7367ms
+2025-06-28 01:26:22.138 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:26:22.138 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:22.138 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:26:22.140 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:22.140 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:26:22.140 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:26:22.140 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.6755ms
+2025-06-28 01:26:27.373 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:26:27.373 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:27.373 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:27.374 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:27.374 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:26:27.374 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:27.374 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5545ms
+2025-06-28 01:26:29.808 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:26:29.808 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:29.808 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:29.808 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:29.808 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:26:29.808 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:29.808 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5401ms
+2025-06-28 01:26:29.821 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:26:29.821 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:29.821 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:26:29.822 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:29.822 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:26:29.822 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:26:29.822 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.6589ms
+2025-06-28 01:26:31.725 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:26:31.725 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:31.725 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:31.726 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:31.726 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:26:31.726 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:31.726 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6902ms
+2025-06-28 01:26:31.751 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:26:31.751 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:31.751 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:31.751 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:31.751 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:26:31.751 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:26:31.751 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6509ms
+2025-06-28 01:26:31.800 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:26:31.800 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:26:31.800 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:26:31.801 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:26:31.801 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:26:31.801 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:26:31.802 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.6623ms
+2025-06-28 01:30:37.387 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:30:37.387 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:30:37.388 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:30:37.388 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:30:37.388 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:30:37.388 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:30:37.388 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 1.4477ms
+2025-06-28 01:30:37.429 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:30:37.429 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:30:37.429 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:30:37.429 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:30:37.429 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:30:37.429 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:30:37.429 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.4828ms
+2025-06-28 01:30:37.486 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:30:37.487 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:30:37.487 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:30:37.496 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:30:37.496 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:30:37.496 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:30:37.496 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 9.3937ms
+2025-06-28 01:30:39.159 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:30:39.159 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:30:39.159 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:30:39.159 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:30:39.159 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:30:39.159 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:30:39.159 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5679ms
+2025-06-28 01:30:47.504 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:30:47.504 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:30:47.504 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:30:47.505 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:30:47.505 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:30:47.505 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:30:47.505 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6292ms
+2025-06-28 01:30:47.519 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:30:47.519 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:30:47.519 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:30:47.521 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:30:47.521 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:30:47.521 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:30:47.521 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 2.49ms
+2025-06-28 01:53:05.567 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:53:05.567 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:05.568 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:05.568 -06:00 [INF] Setting HTTP status code 401.
+2025-06-28 01:53:05.568 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:05.568 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 401 0 null 1.6005ms
+2025-06-28 01:53:05.618 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:53:05.618 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:05.618 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:05.618 -06:00 [INF] Setting HTTP status code 401.
+2025-06-28 01:53:05.618 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:05.618 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 401 0 null 0.6652ms
+2025-06-28 01:53:10.699 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:53:10.699 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:10.699 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:10.699 -06:00 [INF] Setting HTTP status code 401.
+2025-06-28 01:53:10.699 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:10.699 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 401 0 null 0.4854ms
+2025-06-28 01:53:14.379 -06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7080/login - null null
+2025-06-28 01:53:14.379 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:14.379 -06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7080/login - 204 null null 0.7245ms
+2025-06-28 01:53:14.380 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7080/login - application/json 50
+2025-06-28 01:53:14.380 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:14.381 -06:00 [INF] Executing endpoint 'HTTP: POST /login'
+2025-06-28 01:53:14.390 -06:00 [INF] LoginAsync response: 1 for user alestat1@hotmail.com
+2025-06-28 01:53:14.390 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:14.390 -06:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-06-28 01:53:14.390 -06:00 [INF] Executed endpoint 'HTTP: POST /login'
+2025-06-28 01:53:14.390 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7080/login - 200 null application/json; charset=utf-8 10.1231ms
+2025-06-28 01:53:14.397 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:53:14.397 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:14.397 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:14.398 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:14.398 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:53:14.398 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:14.398 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5702ms
+2025-06-28 01:53:14.433 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:53:14.434 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:14.434 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:53:14.435 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:14.435 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:53:14.435 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:53:14.435 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 2.0859ms
+2025-06-28 01:53:15.970 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:53:15.970 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:15.970 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:15.970 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:15.970 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:53:15.970 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:15.970 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6441ms
+2025-06-28 01:53:19.410 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:53:19.410 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:19.410 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:19.410 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:19.410 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:53:19.410 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:19.410 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5833ms
+2025-06-28 01:53:19.422 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:53:19.422 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:19.422 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:53:19.423 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:19.423 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:53:19.423 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:53:19.423 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 1.629ms
+2025-06-28 01:53:22.118 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:53:22.119 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:22.119 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:22.119 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:22.119 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:53:22.119 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:22.119 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6125ms
+2025-06-28 01:53:24.460 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:53:24.461 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:24.461 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:24.461 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:24.461 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:53:24.461 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:24.461 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5558ms
+2025-06-28 01:53:24.474 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:53:24.474 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:24.475 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:53:24.477 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:24.477 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:53:24.477 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:53:24.477 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 2.9424ms
+2025-06-28 01:53:30.587 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:53:30.587 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:30.587 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:30.588 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:30.588 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:53:30.588 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:30.588 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.7394ms
+2025-06-28 01:53:33.918 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:53:33.918 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:33.918 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:33.918 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:33.918 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:53:33.918 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:33.918 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.6262ms
+2025-06-28 01:53:33.962 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:53:33.962 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:33.962 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:33.962 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:33.962 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:53:33.962 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:33.962 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5589ms
+2025-06-28 01:53:37.138 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products/validate - null null
+2025-06-28 01:53:37.138 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:37.138 -06:00 [INF] Executing endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:37.138 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:37.138 -06:00 [INF] Writing value of type 'Boolean' as Json.
+2025-06-28 01:53:37.138 -06:00 [INF] Executed endpoint 'HTTP: GET /products/validate'
+2025-06-28 01:53:37.138 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products/validate - 200 null application/json; charset=utf-8 0.5868ms
+2025-06-28 01:53:37.165 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7080/products - null null
+2025-06-28 01:53:37.166 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:37.166 -06:00 [INF] Executing endpoint 'HTTP: GET /products'
+2025-06-28 01:53:37.168 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:37.168 -06:00 [INF] Writing value of type 'List`1' as Json.
+2025-06-28 01:53:37.169 -06:00 [INF] Executed endpoint 'HTTP: GET /products'
+2025-06-28 01:53:37.169 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7080/products - 200 null application/json; charset=utf-8 3.1714ms
+2025-06-28 01:53:39.762 -06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7080/logout - null null
+2025-06-28 01:53:39.762 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:39.762 -06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7080/logout - 204 null null 0.436ms
+2025-06-28 01:53:39.763 -06:00 [INF] Request starting HTTP/2 POST https://localhost:7080/logout - application/json 2
+2025-06-28 01:53:39.763 -06:00 [INF] CORS policy execution successful.
+2025-06-28 01:53:39.763 -06:00 [INF] Executing endpoint 'HTTP: POST /logout'
+2025-06-28 01:53:39.763 -06:00 [INF] Setting HTTP status code 200.
+2025-06-28 01:53:39.763 -06:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-06-28 01:53:39.763 -06:00 [INF] Executed endpoint 'HTTP: POST /logout'
+2025-06-28 01:53:39.763 -06:00 [INF] Request finished HTTP/2 POST https://localhost:7080/logout - 200 null application/json; charset=utf-8 0.4614ms
