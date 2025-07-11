@@ -1,21 +1,22 @@
-﻿using Azure;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using ProductsMangementAPI.Models;
 using ProductsMangementAPI.Models.DTOs;
 using Serilog;
 using System.Data;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace ProductsMangementAPI.Repository
 {
     public class SpProductRepository : ISpProductRepository
     {
         private readonly string _connectionString;
+        
+        private readonly ILogger<SpProductRepository> _logger;
 
         // Inject the connection string via constructor
-        public SpProductRepository(string connectionString)
+        public SpProductRepository(string connectionString, ILogger<SpProductRepository> logger)
         {
             _connectionString = connectionString;
+            _logger = logger;
         }
 
         public string[] ImagesType = new [] { "image/jpeg", "image/jpg", "image/png", "application/pdf" };
@@ -23,6 +24,7 @@ namespace ProductsMangementAPI.Repository
         public async Task<int> LoginAsync(LoginModel model)
         {
             int Response = 0;
+            _logger.LogInformation($"LoginAsync() Email: {model.Email}, Password: {model.Password}, cn: {_connectionString}" );
             try
             {
                 using (SqlConnection connection = new SqlConnection(_connectionString))
