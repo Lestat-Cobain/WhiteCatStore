@@ -9,22 +9,19 @@ namespace ProductsMangementAPI.Repository
     public class SpProductRepository : ISpProductRepository
     {
         private readonly string _connectionString;
-        
-        private readonly ILogger<SpProductRepository> _logger;
 
         // Inject the connection string via constructor
-        public SpProductRepository(string connectionString, ILogger<SpProductRepository> logger)
+        public SpProductRepository(string connectionString)
         {
             _connectionString = connectionString;
-            _logger = logger;
         }
 
-        public string[] ImagesType = new [] { "image/jpeg", "image/jpg", "image/png", "application/pdf" };
+        public string[] ImagesType = new [] { "image/jpeg", "image/jpg", "image/png", "application/pdf" }; //
 
         public async Task<int> LoginAsync(LoginModel model)
         {
             int Response = 0;
-            _logger.LogInformation($"LoginAsync() Email: {model.Email}, Password: {model.Password}, cn: {_connectionString}" );
+            Log.Information($"LoginAsync() Email: {model.Email}, Password: {model.Password}, cn: {_connectionString}" );
             try
             {
                 using (SqlConnection connection = new SqlConnection(_connectionString))
